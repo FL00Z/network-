@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Network Analyzer</title>
+</head>
+<body>
+    <h1>Discovered Devices</h1>
+    <form method="get" action="/">
+        <button type="submit">Refresh</button>
+    </form>
+    <table border="1">
+        <tr>
+            <th>No.</th><th>IP</th><th>MAC</th><th>Vendor</th><th>Time</th>
+        </tr>
+        {% for device in devices %}
+        <tr>
+            <td>{{ device["No."] }}</td>
+            <td>{{ device["IP"] }}</td>
+            <td>{{ device["MAC"] }}</td>
+            <td>{{ device["Vendor"] }}</td>
+            <td>{{ device["Time & Date"] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

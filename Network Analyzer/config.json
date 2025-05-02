@@ -1,0 +1,12 @@
+{
+  "smtp_server": "smtp.gmail.com",
+  "smtp_port": 465,
+  "from_email": "your_email@gmail.com",
+  "smtp_password": "your_app_password",
+  "to_email": "recipient@example.com",
+
+  "account_sid": "your_twilio_sid",
+  "auth_token": "your_twilio_token",
+  "from_number": "+123456789",
+  "to_number": "+198765432"
+}
